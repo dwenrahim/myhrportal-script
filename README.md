@@ -9,7 +9,7 @@ A short one-sentence description of what this does.
 
 ### Installation
 1. Clone this repo:
-   git clone https://github.com/USERNAME/REPO.git
+   git clone https://github.com/dwenrahim/myhrportal-script.git
 2. Install requirements:
    pip install -r requirements.txt
 
