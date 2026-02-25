@@ -63,14 +63,14 @@ def login():
     
     with st.form("login_form"):
         st.subheader("Sign In")
-        username = st.text_input("Username", placeholder="Enter username (ridzuan/admin)")
+        username = st.text_input("Username", placeholder="Enter username (employee/admin)")
         password = st.text_input("Password", type="password", placeholder="Enter password")
         submit = st.form_submit_button("Login")
         
         if submit:
             # --- MOCK AUTHENTICATION LOGIC ---
             # Replace with database verification in production
-            if username == "emp" and password == "ridzuan123":
+            if username == "ridzuan" and password == "ridzuan123":
                 st.session_state['logged_in'] = True
                 st.session_state['role'] = "employee"
                 st.rerun() # Refresh to show dashboard
@@ -257,3 +257,4 @@ else:
         if st.button("Calculate & Process March Payroll"):
 
             st.success("March Payroll Processed Successfully!")
+
