@@ -5,7 +5,7 @@ from datetime import date
 
 # --- Configuration ---
 st.set_page_config(
-    page_title="MYHR Portal",
+    page_title="MYHR Control Portal",
     page_icon="🏢",
     layout="wide",
     initial_sidebar_state="collapsed" # Starts collapsed, expands after login
@@ -63,14 +63,14 @@ def login():
     
     with st.form("login_form"):
         st.subheader("Sign In")
-        username = st.text_input("Username", placeholder="Enter username (emp/admin)")
+        username = st.text_input("Username", placeholder="Enter username (ridzuan/admin)")
         password = st.text_input("Password", type="password", placeholder="Enter password")
         submit = st.form_submit_button("Login")
         
         if submit:
             # --- MOCK AUTHENTICATION LOGIC ---
             # Replace with database verification in production
-            if username == "emp" and password == "emp123":
+            if username == "emp" and password == "ridzuan123":
                 st.session_state['logged_in'] = True
                 st.session_state['role'] = "employee"
                 st.rerun() # Refresh to show dashboard
@@ -255,4 +255,5 @@ else:
         st.markdown("---")
         st.subheader("Process Current Month")
         if st.button("Calculate & Process March Payroll"):
+
             st.success("March Payroll Processed Successfully!")
