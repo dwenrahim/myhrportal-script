@@ -120,12 +120,12 @@ else:
         # Metrics from original code
         col1, col2, col3 = st.columns(3)
         with col1:
-            st.metric("Annual Leave Balance", "18 Days")
-            st.metric("Medical Leave Balance", "12 Days")
-            st.metric("Paternity Leave Balance", "12 Days")
+            st.metric("Annual Leave Balance", "10/18 Days")
+            st.metric("Medical Leave Balance", "6/12 Days")
+            st.metric("Paternity Leave Balance", "12/12 Days")
         with col2:
-            st.metric("Hospitalization Leave Balance", "60 Days")
-            st.metric("Maternity Leave Balance", "98 Days")
+            st.metric("Hospitalization Leave Balance", "60/60 Days")
+            st.metric("Maternity Leave Balance", "98/98 Days")
             st.metric("Carry Forward Leave Balance", "4 Days")
         with col3:
             st.metric("Next Pay Date", "Mar 31, 2026")
@@ -152,18 +152,20 @@ else:
     elif page == "Employee Details":
         st.title("👤 My Profile")
         st.markdown("### Personal Information")
-        st.write("**Name:** Mohd Ridzuan bin Ab Rahim")
-        st.write("**Employee ID:** DY202")
-        st.write("**IC No:** 850620-14-1111")
-        st.write("**Date of Birth:** 20/06/1985")
-        st.write("**Mobile Number:** 013-4567890")
-        st.write("**Address:** 1-G, JALAN SERI PUTRA 1/1F, BANDAR SERI PUTRA,43000 KAJANG, SELANGOR")
-        st.write("**Work Email:** ridzuan.rahim@diyanas.com")
-        st.write("**Personal Email:** ridzuan.rahim85@gmail.com")
-        st.write("**Joined Date:** 05/01/2023")
-        st.write("**Position:** Sr Software Test Engineer")
-        st.write("**Contract Type:** Full-Time Employee")
-        st.write("**Reporting Manager:** Wong Fei Hong")
+        with col1:
+            st.write("**Name:** Mohd Ridzuan bin Ab Rahim")
+            st.write("**Employee ID:** DY202")
+            st.write("**IC No:** 850620-14-1111")
+            st.write("**Date of Birth:** 20/06/1985")
+            st.write("**Mobile Number:** 013-4567890")
+        with col2:
+            st.write("**Address:** 1-G, JALAN SERI PUTRA 1/1F, BANDAR SERI PUTRA,43000 KAJANG, SELANGOR")
+            st.write("**Work Email:** ridzuan.rahim@diyanas.com")
+            st.write("**Personal Email:** ridzuan.rahim85@gmail.com")
+            st.write("**Joined Date:** 05/01/2023")
+            st.write("**Position:** Sr Software Test Engineer")
+            st.write("**Contract Type:** Full-Time Employee")
+            st.write("**Reporting Manager:** Wong Fei Hong")
         
         st.markdown("### Benefits")
         st.write("- Health Insurance: **Active**")
@@ -257,5 +259,6 @@ else:
         if st.button("Calculate & Process March Payroll"):
 
             st.success("March Payroll Processed Successfully!")
+
 
 
