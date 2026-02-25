@@ -58,7 +58,7 @@ if 'role' not in st.session_state:
 
 # --- Login Function ---
 def login():
-    st.title("🏢 MYHR Portal Login")
+    st.title("🏢 MYHR Control Portal Login")
     st.markdown("---")
     
     with st.form("login_form"):
@@ -257,4 +257,5 @@ else:
         if st.button("Calculate & Process March Payroll"):
 
             st.success("March Payroll Processed Successfully!")
+
 
