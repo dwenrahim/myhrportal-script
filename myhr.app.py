@@ -152,20 +152,18 @@ else:
     elif page == "Employee Details":
         st.title("👤 My Profile")
         st.markdown("### Personal Information")
-        with col1:
-            st.write("**Name:** Mohd Ridzuan bin Ab Rahim")
-            st.write("**Employee ID:** DY202")
-            st.write("**IC No:** 850620-14-1111")
-            st.write("**Date of Birth:** 20/06/1985")
-            st.write("**Mobile Number:** 013-4567890")
-        with col2:
-            st.write("**Address:** 1-G, JALAN SERI PUTRA 1/1F, BANDAR SERI PUTRA,43000 KAJANG, SELANGOR")
-            st.write("**Work Email:** ridzuan.rahim@diyanas.com")
-            st.write("**Personal Email:** ridzuan.rahim85@gmail.com")
-            st.write("**Joined Date:** 05/01/2023")
-            st.write("**Position:** Sr Software Test Engineer")
-            st.write("**Contract Type:** Full-Time Employee")
-            st.write("**Reporting Manager:** Wong Fei Hong")
+        st.write("**Name:** Mohd Ridzuan bin Ab Rahim")
+        st.write("**Employee ID:** DY202")
+        st.write("**IC No:** 850620-14-1111")
+        st.write("**Date of Birth:** 20/06/1985")
+        st.write("**Mobile Number:** 013-4567890")
+        st.write("**Address:** 1-G, JALAN SERI PUTRA 1/1F, BANDAR SERI PUTRA,43000 KAJANG, SELANGOR")
+        st.write("**Work Email:** ridzuan.rahim@diyanas.com")
+        st.write("**Personal Email:** ridzuan.rahim85@gmail.com")
+        st.write("**Joined Date:** 05/01/2023")
+        st.write("**Position:** Sr Software Test Engineer")
+        st.write("**Contract Type:** Full-Time Employee")
+        st.write("**Reporting Manager:** Wong Fei Hong")
         
         st.markdown("### Benefits")
         st.write("- Health Insurance: **Active**")
@@ -259,6 +257,7 @@ else:
         if st.button("Calculate & Process March Payroll"):
 
             st.success("March Payroll Processed Successfully!")
+
 
 
 
